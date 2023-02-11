@@ -49,7 +49,7 @@ async def generate_completion_response(
         )
         rendered = prompt.render()
         response = openai.Completion.create(
-            engine="text-chat-davinci-002-sh-alpha-aoruigiofdj83",
+            engine="text-davinci-003",
             prompt=rendered,
             temperature=1.0,
             top_p=0.9,
